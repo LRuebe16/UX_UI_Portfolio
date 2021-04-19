@@ -1,0 +1,706 @@
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #E8C9AD;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader img {
+  animation: spin 3s ease;
+  width: 150px;
+}
+
+body{
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  background-image: url("../images/Skills_Background-image.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  margin: 0px;
+}
+p{
+  font-size: 20px;
+  color: #2E7476;
+  text-align: justify;
+}
+#heroGrid p{
+  font-size: 30px;
+  color: #2E7476;
+  text-align: left;
+}
+#heroGrid{
+  display: grid;
+  width: 100%;
+  padding-top: 50px;
+  height: calc(100vh - 150px);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "flexContainer heroImg"
+}
+.categoryGridAreaTop{
+  text-align: center;
+  justify-content: center;
+}
+.heroImg{
+  align-items: center;
+  grid-area: heroImg;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.heroImg img{
+  width: 75%;
+  min-width: 550px;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 200px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  font-weight: 200px;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+h3{
+  font-size: 35px;
+  margin: 15px;
+  font-weight: 200px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+
+button:hover {
+  color: #ffffff !important;
+  background-color: #2E7476 !important;
+  transform: scale(1.05);
+}
+.button2:hover {
+  color: #ffffff !important;
+  background-color: #2E7476;
+}
+button{
+  background-color: white;
+  color: #2E7476;
+  border: 3px solid #2E7476;
+  padding: 14px 34px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button2{
+  display: inline-block;
+  background-color: white;
+  color: #2E7476;
+  border: 3px solid #2E7476;
+  padding: 10px 20px;
+  margin: 10px 10px 30px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+/*Top Navigation*/
+#fixedHeader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  z-index:10;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background-color: #e8c9adb9;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+header ul{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-right: 40px;
+  margin: none;
+}
+
+header li a:hover{
+  background-color: #2E7476;
+  color: #E8C9AD;
+  background-size:contain;
+}
+header li{
+  display: inline-block;
+  line-height: 70px;
+  font-size: 24pt;
+}
+header .floatleft {
+  float:left;
+  padding-left: 80px;
+  padding-top: 12px;
+}
+header .floatright {
+  float:right;
+  padding-right: 60px;
+}
+
+.logo{
+  display: inline-block;
+  width: 20%;
+  padding: 1%;
+  text-align: center;
+}
+
+/*Left Hero*/
+
+.flexContainer {
+  grid-area: flexContainer;
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
+}
+.flexContainer h1{
+  text-align: left;
+  font-size: 70px;
+  margin: 0px;
+}
+.flexContainer h2 {
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.flexContainer h3 {
+  text-align: left;
+  padding-bottom: 14px;
+  margin: 0px;
+}
+
+a { color: #2E7476; 
+  text-decoration: none;
+  padding: 20px;
+ }
+
+.arrow {
+  text-align: center;
+  margin: 1% 0;
+  width: 100%;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Back to Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: solid 3px #2E7476;
+  outline: none;
+  background-color: #ffffff93;
+  color: #2E7476;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+#myBtn:hover {
+  background-color: #2E7476;
+  color: #ffffff;
+}
+
+/*My Work Page*/
+#downArrowScroll{
+  padding-top: 100px;
+}
+#workGrid{
+  display: grid;
+  margin: 0px 5%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "GDRNT CSA"
+  "TOTO graphicDesign"
+  ;
+}
+.categoryGridArea:hover {
+  transform: scale(1.03);
+}
+.categoryGridArea{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: 30px;
+  display: grid;
+  align-content: end;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px #00000079;
+  transition: all .2s ease-in-out;
+}
+.categoryGridArea p {
+  text-align: center;
+}
+.categoryGridArea h3 {
+  padding-top: 12px;
+}
+#workGrid .heading{
+  background-color: rgb(255, 255, 255);
+  padding-left: 30px;
+  padding-right: 25px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.subHeading{
+  text-align: center;
+  margin: 50px auto;
+}
+#GDRNT{
+  grid-area: GDRNT;
+  background-image: url("../images/GDRNT_oldDog.png");
+}
+#CSA{
+  grid-area: CSA;
+  background-image: url("../images/Astronaut.png");
+}
+#TOTO{
+  grid-area: TOTO;
+  background-image: url("../images/DogTraveling2.png");
+}
+#graphicDesign{
+  grid-area: graphicDesign;
+  background-image: url("../images/GraphicDesign.png");
+}
+
+/*About Me Page*/
+#heroImgBottom img{
+  margin-bottom: -30px;
+  width: 75%;
+  max-width: 600px;
+  margin-top: -70px;
+}
+.content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/*My Skills Page*/
+#mySkillsBottom{
+  text-align: center;
+  padding-top: 100px;
+}
+.flexContainerBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.flexContainerBottom h3{
+  text-align: left;
+}
+.flexContainerBottom h4 {
+  text-align: left;
+}
+#mySkillsBottom img{
+  max-width: 450px;
+  min-width: 350px;
+}
+
+/*Contact Page*/
+.hireMe{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.email {
+  display: flex;
+  float: left;
+  line-height: 20px;
+  padding-right: 10px;
+}
+.material-icons{
+  padding-right: 10px;
+}
+.linkIn {
+  display: flex;
+  float: right;
+}
+.linkIn .fa{
+  color: #2E7476;
+  background: none;
+  line-height: 20px;
+  padding-right: 20px;
+}
+
+
+/*FOOTER*/
+footer {
+  display: block;
+  width: 100%;
+  background-color: #2E7476;
+  color: #E8C9AD;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 90px;
+}
+footer .regText{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 33px;
+  font-weight: 200px;
+  line-height: 70px;
+}
+footer ul {
+  width: -webkit-fill-available;
+  padding-right: 100px;
+  padding-left: 100PX;
+}
+footer li {
+  display: inline-block;
+  padding: 10px;
+  color: #E8C9AD;
+  font-size: 18pt;
+}
+.floatleft {
+  float:left;
+}
+.floatright {
+  float:right;
+}
+
+/*social media icons*/
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.8;
+}
+.fa-facebook {
+  background: #E8C9AD;
+  color: #1A2F30;
+}
+.fa-linkedin {
+  background: #E8C9AD;
+  color: #1A2F30;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+    width: 20%;
+  }
+  100% {
+    transform: rotate(720deg); 
+  }
+}
+
+/*Media Query*/
+@media only screen and (max-width: 1000px) {
+
+.arrow{
+  display: none;
+}
+  #workGrid {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "GDRNT"
+    "CSA"
+    "TOTO";
+  }
+
+  a {
+    text-align: left;
+  }
+  #heroGrid p {
+    max-width: 80%;
+    padding-left: 80px;
+  } 
+ .flexContainer h1, h2{
+    padding-left: 80px;
+  } 
+  .heroImg img{
+    width: 60%;
+    margin: 0px;
+  }
+
+  .categoryGridAreaTop{
+    text-align: center;
+    margin: 0px;
+  }
+.flexContainer {
+  width: 100%;
+  margin:0px;
+}
+  #heroGrid {
+    display: grid;
+    margin: 0%;
+    height: auto;
+    padding-bottom: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "heroImg"
+    "flexContainer"    
+      ;
+  }
+
+.flexContainerBottom {
+  flex-direction: column;
+  width: 100%;
+}
+.mySkillsBottom img{
+  width: 100%;
+}
+.floatright {
+    float: right;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+.floatleft {
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+
+body{
+    padding-top: 100px;
+  }
+
+footer ul{
+   padding-left: 40px;
+   padding-right: 40px;
+   margin: 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+#downArrowScroll {
+  padding-top: 200px;
+}
+#heroImgBottom {
+  padding-top: 90px;
+}
+.subHeading{
+  margin-top: -100px;
+  margin-bottom: 0px;
+}
+  #pictureMe{
+  margin: auto;
+  padding: 0px;
+  width: auto;
+}  
+.flexContainerBottom {
+    flex-direction: column;
+    width: 100%;
+  }
+.mySkillsBottom{
+  margin: 0 auto;
+  padding:0px;
+  width: 100%;
+}
+.mySkillsBottom img{
+    width: 80%;
+
+  }
+.content{
+    width: 100%;
+    margin: 0;
+    padding-top: 0px;
+  }
+  .content p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+.flexContainerBottom {
+    flex-direction: column;
+    width: 100%;
+  }
+  .codingKnowledge{
+    padding-top: 40px;
+  }
+#mySkillsBottom{
+  width: 100%;
+  margin: 0;
+  padding-top: 90px;
+  }
+#mySkillsBottom img{
+    width: 90%;
+    }
+
+    #heroGrid p {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 25px;
+      text-align: left;
+    } 
+   .flexContainer h1{
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 50px;
+    } 
+    .flexContainer h2{
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 35px;
+      margin: 0;
+    } 
+    .heroImg img{
+      width: 60%;
+      min-width: 80%;
+      margin: 0px;
+    }
+  
+    .categoryGridAreaTop{
+      text-align: center;
+      margin: 0px;
+    }
+  .flexContainer {
+    width: 100%;
+    margin:0px;
+  }
+    #heroGrid {
+      display: grid;
+      margin: 0%;
+      height: auto;
+      padding-bottom: 20px;
+      padding-top: 0px;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas:
+      "heroImg"
+      "flexContainer"    
+        ;
+    }
+#workGrid {
+    display: block;
+    margin: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "GDRNT"
+    "CSA"
+    "TOTO";
+  }
+.floatright {
+    float: none;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+.floatleft {
+    float: none;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  a {
+    padding: 0px;
+  }
+#fixedHeader{
+    width: 100%;
+  }
+header .floatright {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 65%;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+header .floatleft {
+     float: left;
+     padding-left: 20px;
+  }
+footer{
+    width: 100%;
+    height: 100%;
+  }
+footer ul{
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 0px;
+  }
+
+footer .regText {
+    line-height: 0px;
+}
+header {
+    height: 110px;
+    width: 100%;
+  }
+header li{
+    padding-right: 0px;
+    padding-left: 30px;
+    line-height: 40px;
+  }
+body{
+    padding-top: 80px;
+  }
+
+element.style {
+  display: block;
+}
+
+}
